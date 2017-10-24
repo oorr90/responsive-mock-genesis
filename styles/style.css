@@ -1,0 +1,565 @@
+/* Project 2: Flexible Layout style sheet */
+
+/* the following code hides the screen reader text in an accessible way. */
+.screen-reader-shortcut, .screen-reader-text, .screen-reader-text span {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+/* add your styles down here. */
+
+/**************************************
+
+OVERALL STYLES
+
+**************************************/
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    box-sizing: border-box;
+}
+
+/****** Make body (except top menu) 90% width centered *****/
+
+.site-header, .nav-secondary, .site-inner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+a {
+    text-decoration: none;
+    color: #551a8b;
+}
+
+.site-title {
+    font-family: "Arial Black"
+}
+
+.widgettitle, .nav-primary, #menu-primary-navigation {
+    text-transform: uppercase;
+}
+
+
+
+
+
+/**************************************
+
+BODY SIZING
+
+**************************************/
+
+.content {
+    width: 65.76%;
+    float: left;
+}
+
+.sidebar {
+    width: 31.52%;
+    float: right;
+}
+
+.site-inner {
+    overflow: auto;
+}
+
+
+
+
+/**************************************
+
+IMAGES
+
+**************************************/
+
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+/**************************************
+
+NAVIGATION: PRIMARY
+
+**************************************/
+
+/* Original styles from Project 2 */
+/*
+.nav-primary {
+    width: 100%;
+    background-color: #262626;
+    padding: 1.5em 0;
+}
+
+.nav-primary a {
+    color: #f2f2f2;
+    
+}
+
+.nav-primary .current-menu-item a {
+    color: #e8554e;
+}
+
+.nav-primary ul li {
+    display: inline-block;
+    padding: 1.8em;
+}
+*/
+
+
+/* RE STYLING for jQuery plugin */
+
+.nav-primary .current-menu-item a {
+    color: #e8554e;
+}
+
+.nav-primary .pgwMenu {
+    background-color: #262626;
+    width: 100%;
+    padding: 1em;
+}
+
+.nav-primary .pgwMenu li{
+    padding: 0 1em;
+}
+
+.nav-primary .pgwMenu li a {
+    font-size: 1.1em;
+}
+
+.nav-primary .pgwMenu li a:hover {
+    background-color: #262626;
+    color: #e8554e;
+}
+
+
+
+/**************************************
+
+NAVIGATION: SECONDARY
+
+**************************************/
+
+/* Original styles from Project 2 */
+/*
+#menu-primary-navigation {
+    display: inline-block;
+    margin: 50px 0;
+}
+
+#menu-primary-navigation li {
+    display: inline;
+    margin: 0 1em;
+}
+*/
+
+/* RE STYLING for jQuery plugin */
+.nav-secondary .light {
+    background-color: #fff;
+    margin: 40px 0;
+}
+
+.nav-secondary .light li a:hover {
+    color: #e8554e;
+    background-color: #fff; /* did not want background box on full screen */
+}
+
+
+
+
+/**************************************
+
+HEADER
+
+**************************************/
+
+.site-header {
+    overflow: auto;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.site-title a {
+    font-weight: bold;
+    font-size: 3.4375em;
+    float: left;
+    padding: 0;
+    color: #262626;
+}
+
+.site-description {
+    display: none;
+}
+
+.site-header .textwidget {
+    float: right;
+}
+
+
+
+
+/**************************************
+
+WIDGET WRAP: MAIN PAGE STYLINGS
+
+**************************************/
+
+.widget-title {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #262626;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.entry-header .entry-title a {
+    font-weight: bold;
+}
+
+.entry-header .entry-title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.more-link {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    margin: 15px 0 40px 0;
+}
+
+#featured-post-3 article, 
+#featured-post-2 article {
+    position: relative;
+}
+
+
+#featured-post-3 .entry-time, 
+#featured-post-2 .entry-time {
+    background-color: #e8554e;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+}
+
+#featured-post-3 .entry-time {
+    top: 180px;
+}
+
+#featured-post-2 .entry-time {
+    top: 50px;
+}
+
+.entry-comments-link {
+    margin-left: 1.25em;
+}
+
+.entry-content {
+    margin-top: 14px;
+}
+
+
+/**************************************
+
+WIDGET WRAP: TWO COLUMNS INTERNAL
+
+**************************************/
+
+#featured-post-2 {
+    overflow: auto;
+}
+
+#featured-post-2 article {
+    width: 47.9415670651%; /* 361px wide with 31px margin in between: 361/753 * 100 */
+    float: left;
+}
+
+#featured-post-2 article:nth-of-type(1) {
+    margin-right: 4.11686586985%; /* 31 for the margin, add to one article: 31/753 * 100 */
+}
+
+#featured-post-6 .entry-time {
+    margin-right: 20px;
+}
+
+
+/**************************************
+
+FORM INPUT TAGS
+
+**************************************/
+
+#enews-ext-2 {
+    background-color: #262626;
+    color: #fff;
+}
+
+input[type=submit] {
+    background-color: #e8554e;
+    border: none;
+}
+
+
+/**************************************
+
+EMAIL NEWSLETTER
+
+**************************************/
+
+.enews {
+    padding: 32px;
+}
+
+.enews h3 {
+    padding: 10px 0 15px 0;
+}
+
+.enews p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+
+#subscribeenews-ext-2 input {
+    width: 100%;
+    padding: 0.9375em;
+}
+
+#subbox, #subbox1 {
+    border: none;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+}
+
+#subbutton {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+/**************************************
+
+SOCIAL MEDIA ICONS
+
+**************************************/
+
+#simple-social-icons-2 {
+    margin: 32px 0 32px 0;
+}
+
+#simple-social-icons-2.simple-social-icons ul li a {
+    width: 48px;
+    height: 48px;
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    padding: 0;
+}
+
+#simple-social-icons-2 ul {
+    text-align: center;
+}
+
+#simple-social-icons-2 li {
+    display: inline-block;
+    margin: 2px;
+}
+
+.ssi-facebook a {
+    background-image: url("images/facebook.jpg");
+}
+
+.ssi-gplus a {
+    background-image: url("images/googleplus.jpg");
+}
+
+.ssi-instagram a {
+    background-image: url("images/instagram.jpg");
+}
+
+.ssi-pinterest a {
+    background-image: url("images/pinterest.jpg");
+}
+
+.ssi-twitter a {
+    background-image: url("images/twitter.jpg");
+}
+
+.ssi-youtube a {
+    background-image: url("images/youtube.jpg");
+}
+
+
+
+/**************************************
+
+SIDEBAR: NEWS
+
+**************************************/
+
+#featured-post-4 {
+    overflow: auto;
+}
+
+#featured-post-4 h3 {
+    margin-bottom: 24px;
+}
+
+#featured-post-4 article {
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+#featured-post-4 article img {
+    width: 27.1468144044%; /* 98/361 * 100 */
+}
+
+#featured-post-4 .entry-header {
+    float: right;  
+    width: 70%;
+}
+
+#featured-post-4 h4 a {
+    font-weight: normal;
+}
+
+#featured-post-4 h4 {
+    margin: 0 0 8px 0;
+}
+
+
+
+
+/**************************************
+
+SIDEBAR: TAGS
+
+**************************************/
+
+#tag_cloud-3 {
+    margin-top: 30px;
+}
+
+.tagcloud a {
+    padding: 10px;
+    background-color: #f2f2f2;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+
+
+
+
+/**************************************
+
+FOOTER: HIDDEN
+
+**************************************/
+
+#genesis-footer-widgets {
+    display: none;
+}
+
+
+
+
+
+
+/**************************************
+
+MEDIA QUERIES
+
+**************************************/
+
+
+@media screen and (max-width: 1024px) {
+    
+    /**** FIXING THE NAVS AND HEADER ****/
+    .site-header .textwidget {
+        display: none; /* Hide the ad in the header */
+    }
+    
+    
+    /**** FIXING THE CONTENT LAYOUT ****/
+    #genesis-content {
+        width: 100%;
+    }
+    
+    .sidebar {
+        clear: both;
+        width: 100%;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 700px) {
+    
+    /**** Fixing the Primary Navigation ****/
+    .nav-primary .pgwMenu {
+        padding-left: 0;
+    }
+    
+    .nav-primary .pgwMenu a {
+        background-color: #262626;
+    }
+    
+    .nav-primary .pgwMenu li {
+        padding: 0;
+    }
+    
+    /**** Fixing the Secondary Navigation ****/
+    .nav-secondary, .pgwMenu.light .pm-links, .pgwMenu.light .pm-links li {
+        width: 100%
+    }
+    
+    .pgwMenu.light .pm-dropDown a {
+        background-color: #fff;
+    }
+    
+    .pgwMenu.light .pm-links li a:hover {
+        background-color: #ccc;
+    }
+    
+    #featured-post-3 .entry-time {
+        top: 80px;
+    }
+    
+    /**** FIXING THE 2 COLUMN DEGREE PROGRAMS SECTION ****/
+    #featured-post-2 article {
+        width: 100%;
+    }
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
